@@ -21,17 +21,17 @@
 
 body.dark__mode {
   /* Neutral - Dark Mode */
-  --primary-color: #12131a;
-  --secondary-color: #1e1f26;
-  --tertiary-color: #2a2b32;
-  --text-color: #ffffff;
-  --heading-color: #ffffff;
+  --primary-color: #0d1b2a; /* Asosiy fon (chuqur ko‘k) */
+  --secondary-color: #1b263b; /* Sekundar fon (biroz yengil) */
+  --tertiary-color: #415a77; /* Yuzalar, karta orqa fon (ko‘k-kulrang) */
+  --text-color: #e0e1dd; /* Asosiy matn rangi (yorqin oq-kulrang) */
+  --heading-color: #ffffff; /* Sarlavhalar rangi */
 
   /* Gray / Border - Dark Mode */
-  --light-gray: #2a2b32;
-  --gray: #1e1f26;
+  --light-gray: #778da9; /* Yengil kul-ko‘k border */
+  --gray: #1b263b; /* Asosiy border orqa fon bilan bir xil */
 
   /* Text - Dark Mode */
-  --text-white: #12131a;
-  --text-black: #ffffff;
+  --text-white: #0d1b2a; /* Fon bilan uyg‘un, lekin teskari */
+  --text-black: #ffffff; /* Yorqin matn */
 }

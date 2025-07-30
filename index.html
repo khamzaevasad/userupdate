@@ -6,22 +6,72 @@
     <title>Random user || Khamzaev Asad</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body class="">
     <!-- HEADER START -->
     <header class="header">
-      <h2>Header</h2>
+      <div class="header__container container">
+        <a class="header__logo" href="./index.html">USER</a>
+        <div class="theme__toggle">
+          <img
+            class="dark__icon"
+            id="dark-btn"
+            src="./images/icon-moon.svg"
+            alt="dark-btn"
+          />
+          <img
+            class="light__icon hidden"
+            id="light-btn"
+            src="./images/icon-sun.svg"
+            alt="light-btn"
+          />
+        </div>
+      </div>
     </header>
     <!-- HEADER END -->
 
     <!-- MAIN START -->
     <main class="main">
-      <h2>Main</h2>
+      <section class="main__container container">
+        <!-- HERO SECTION -->
+        <h3 class="main__heading">RANDOM USER GENERATOR</h3>
+
+        <!-- MIDDLE SECTION -->
+        <div class="middle">
+          <!-- FORM -->
+          <form id="form" class="form">
+            <input
+              class="form__input"
+              type="search"
+              name="user-search"
+              id="form-input"
+              placeholder="Live search users"
+              aria-label="search"
+              autocomplete="off"
+            />
+            <button id="form__button" class="form__button">Refresh</button>
+            <button id="form__button" class="form__button">Clear</button>
+          </form>
+        </div>
+      </section>
     </main>
     <!-- MAIN END -->
 
     <!-- FOOTER START -->
     <footer class="footer">
-      <h2>Footer</h2>
+      <div class="footer__container container">
+        <p class="footer__subtitle">
+          My secret lab is open to the public:
+          <span>
+            <a
+              class="git__link"
+              href="https://github.com/khamzaevasad
+"
+            >
+              github
+            </a>
+          </span>
+        </p>
+      </div>
     </footer>
     <!-- FOOTER END -->
 

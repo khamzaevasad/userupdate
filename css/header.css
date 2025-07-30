@@ -1,0 +1,35 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.header__logo {
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.theme__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--heading-color);
+}
+.dark__icon,
+.light__icon {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dark__icon:hover {
+  opacity: 70%;
+}
+.light__icon:hover {
+  opacity: 70%;
+}

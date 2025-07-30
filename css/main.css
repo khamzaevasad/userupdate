@@ -37,6 +37,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-image: url("../images/spotlight2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 main {
@@ -54,4 +58,8 @@ h1 {
   padding-right: 5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hidden {
+  display: none;
 }
