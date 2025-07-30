@@ -3,6 +3,7 @@
 @import "./fonts.css";
 @import "./header.css";
 @import "./footer.css";
+@import "./user.css";
 
 *,
 *::after,
@@ -41,6 +42,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: var(--primary-color);
+  user-select: none;
 }
 
 main {
@@ -62,4 +65,12 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.icon {
+  color: black;
+}
+
+.dark__mode .icon {
+  color: white;
 }

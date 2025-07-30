@@ -34,4 +34,5 @@ body.dark__mode {
   /* Text - Dark Mode */
   --text-white: #0d1b2a; /* Fon bilan uyg‘un, lekin teskari */
   --text-black: #ffffff; /* Yorqin matn */
+  ---icon: #ffffff;
 }
