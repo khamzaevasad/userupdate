@@ -11,8 +11,12 @@
   font-size: 3rem;
   font-weight: 600;
   color: var(--heading-color);
+  transition: 0.5s;
 }
 
+.header__logo:hover {
+  opacity: 0.7;
+}
 .dark__icon,
 .light__icon {
   cursor: pointer;

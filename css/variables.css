@@ -17,6 +17,10 @@
   /* Font family */
   --font-secondary: "Space Mono", monospace;
   --font-primary: "DM Sans";
+
+  --gradient-from: var(--tertiary-color); /* #e4e4ef */
+  --gradient-via: var(--secondary-color); /* #f2f2f7 */
+  --gradient-to: var(--primary-color);
 }
 
 body.dark__mode {
@@ -35,4 +39,9 @@ body.dark__mode {
   --text-white: #0d1b2a; /* Fon bilan uyg‘un, lekin teskari */
   --text-black: #ffffff; /* Yorqin matn */
   ---icon: #ffffff;
+
+  /* Gradient uchun ranglar (dark mode) */
+  --gradient-from: var(--tertiary-color); /* #415a77 */
+  --gradient-via: var(--secondary-color); /* #1b263b */
+  --gradient-to: var(--primary-color); /* #0d1b2a */
 }
