@@ -70,7 +70,8 @@
 
           <!-- USER -->
           <div class="card__container">
-            <ul id="user__card" class="user__card">
+            <ul id="user__card" class="user__card"></ul>
+            <template>
               <li class="user__item">
                 <img
                   class="user__img"
@@ -93,7 +94,7 @@
                       />
                     </svg>
                   </span>
-                  <span> - Khamzaev Asad</span>
+                  <span class="user__name_tem"> - Khamzaev Asad</span>
                 </div>
                 <div class="user__age">
                   <span>
@@ -109,7 +110,7 @@
                       />
                     </svg>
                   </span>
-                  <span>- 25</span>
+                  <span class="user__age__tem">- 25</span>
                 </div>
                 <div class="user__location">
                   <span>
@@ -125,7 +126,7 @@
                       />
                     </svg>
                   </span>
-                  <span>- South Korea</span>
+                  <span class="user__location__tem">- South Korea</span>
                 </div>
                 <div class="user__gender">
                   <span>
@@ -141,162 +142,14 @@
                       />
                     </svg>
                   </span>
-                  <span>- male</span>
+                  <span class="user__gender__tem">- male</span>
                 </div>
 
                 <button id="delete__btn" class="delete__btn">
                   Delete User
                 </button>
               </li>
-
-              <li class="user__item">
-                <img
-                  class="user__img"
-                  src="https://placehold.co/100x100"
-                  alt="user-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="user__name">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M560-440h200v-80H560v80Zm0-120h200v-80H560v80ZM200-320h320v-22q0-45-44-71.5T360-440q-72 0-116 26.5T200-342v22Zm160-160q33 0 56.5-23.5T440-560q0-33-23.5-56.5T360-640q-33 0-56.5 23.5T280-560q0 33 23.5 56.5T360-480ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"
-                      />
-                    </svg>
-                  </span>
-                  <span> - Khamzaev Asad</span>
-                </div>
-                <div class="user__age">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z"
-                      />
-                    </svg>
-                  </span>
-                  <span>- 25</span>
-                </div>
-                <div class="user__location">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
-                      />
-                    </svg>
-                  </span>
-                  <span>- South Korea</span>
-                </div>
-                <div class="user__gender">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M480-660q-29 0-49.5-20.5T410-730q0-29 20.5-49.5T480-800q29 0 49.5 20.5T550-730q0 29-20.5 49.5T480-660Zm-80 500v-200h-40v-180q0-33 23.5-56.5T440-620h80q33 0 56.5 23.5T600-540v180h-40v200H400Z"
-                      />
-                    </svg>
-                  </span>
-                  <span>- male</span>
-                </div>
-              </li>
-
-              <li class="user__item">
-                <img
-                  class="user__img"
-                  src="https://placehold.co/100x100"
-                  alt="user-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="user__name">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M560-440h200v-80H560v80Zm0-120h200v-80H560v80ZM200-320h320v-22q0-45-44-71.5T360-440q-72 0-116 26.5T200-342v22Zm160-160q33 0 56.5-23.5T440-560q0-33-23.5-56.5T360-640q-33 0-56.5 23.5T280-560q0 33 23.5 56.5T360-480ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"
-                      />
-                    </svg>
-                  </span>
-                  <span> - Khamzaev Asad</span>
-                </div>
-                <div class="user__age">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z"
-                      />
-                    </svg>
-                  </span>
-                  <span>- 25</span>
-                </div>
-                <div class="user__location">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
-                      />
-                    </svg>
-                  </span>
-                  <span>- South Korea</span>
-                </div>
-                <div class="user__gender">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M480-660q-29 0-49.5-20.5T410-730q0-29 20.5-49.5T480-800q29 0 49.5 20.5T550-730q0 29-20.5 49.5T480-660Zm-80 500v-200h-40v-180q0-33 23.5-56.5T440-620h80q33 0 56.5 23.5T600-540v180h-40v200H400Z"
-                      />
-                    </svg>
-                  </span>
-                  <span>- male</span>
-                </div>
-              </li>
-            </ul>
+            </template>
           </div>
         </div>
       </section>
