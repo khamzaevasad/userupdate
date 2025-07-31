@@ -64,7 +64,7 @@
               autocomplete="off"
             />
             <button id="form__button" class="form__button">Refresh</button>
-            <button id="form__button" class="form__button">Clear</button>
+            <button id="clear__button" class="form__button">Clear</button>
           </form>
           <!-- FORM-END -->
 
@@ -143,6 +143,10 @@
                   </span>
                   <span>- male</span>
                 </div>
+
+                <button id="delete__btn" class="delete__btn">
+                  Delete User
+                </button>
               </li>
 
               <li class="user__item">
@@ -318,7 +322,19 @@
     </footer>
     <!-- FOOTER END -->
 
+    <!-- Loader -->
+    <div class="overlay hidden" id="overlay">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
     <!-- SCRIPT -->
-    <script type="module" src="./js/app.js"></script>
+    <script src="./js/mode.js"></script>
+    <script src="./js/request.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

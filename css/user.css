@@ -36,3 +36,19 @@
   color: var(--heading-color);
   padding: 0.7rem;
 }
+
+.delete__btn {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--heading-color);
+  transition: all 0.3s ease;
+  color: var(--text-white);
+}
+.delete__btn:hover {
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+}
