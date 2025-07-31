@@ -38,7 +38,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-image: url("../images/spotlight1.png");
   background-image: url("../images/spotlight2.png");
+  background-image: url("../images/spotlight3.png");
+  background-image: url("../images/spotlight4.png");
+  background-image: url("../images/spotlight5.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -13,19 +13,13 @@
   color: var(--heading-color);
 }
 
-.theme__toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: var(--heading-color);
-}
 .dark__icon,
 .light__icon {
   cursor: pointer;
   transition: 0.5s;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .dark__icon:hover {
   opacity: 70%;
