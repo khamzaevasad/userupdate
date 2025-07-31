@@ -1,7 +1,6 @@
 const form = document.getElementById("form");
 const formButton = document.getElementById("form__button");
 const user = document.getElementById("user__card");
-const deleteBtn = document.getElementById("delete__btn");
 const clearBtn = document.getElementById("clear__button");
 const template = document.querySelector("template");
 
@@ -21,6 +20,20 @@ clearBtn.addEventListener("click", (e) => {
 });
 
 // search by name
+form["form__input"].addEventListener("input", () => {
+  const inputValue = form["form__input"].value.toLocaleLowerCase();
+  const userName = document.querySelectorAll(".user__name");
+
+  userName.forEach((item) => {
+    if (
+      item.lastElementChild.textContent.toLocaleLowerCase().includes(inputValue)
+    ) {
+      item.parentElement.classList.remove("hidden");
+    } else {
+      item.parentElement.classList.add("hidden");
+    }
+  });
+});
 
 //get result and update UI
 const updateUI = (data) => {
@@ -45,3 +58,14 @@ const updateUI = (data) => {
     user.appendChild(clone);
   });
 };
+
+//delete user
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList[0] === "delete__btn") {
+    e.target.parentElement.remove();
+  }
+  if (!user.children.length) {
+    clearBtn.classList.add("hidden");
+  }
+});
