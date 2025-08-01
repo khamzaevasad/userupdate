@@ -1,9 +1,10 @@
 // api
-const API = "https://randomuser.me/api/?results=30";
+export const API = "https://randomuser.me/api/?results=30";
 
 // for leader
 const overlay = document.getElementById("overlay");
 
+//toggle loader
 const loader = (toggle) => {
   if (toggle) {
     overlay.classList.remove("hidden");
@@ -12,7 +13,8 @@ const loader = (toggle) => {
   }
 };
 
-const getData = async (resource) => {
+//request
+export const getData = async (resource) => {
   loader(true);
   const request = await fetch(resource);
   if (request.status != 200) {
@@ -22,16 +24,3 @@ const getData = async (resource) => {
   loader(false);
   return data;
 };
-
-const reload = () => {
-  getData(API)
-    .then((data) => {
-      updateUI(data.results);
-    })
-    .catch((err) => {
-      console.log(err.message);
-      loader(false);
-    });
-};
-
-document.addEventListener("DOMContentLoaded", reload);
